@@ -1,12 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { NgIf } from '@angular/common';  // <-- IMPORTA NgIf
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterModule, NgIf],  // <-- AÑADE NgIf aquí
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hello-world';
+  menuVisible = false;
+
+  toggleMenu() {
+    this.menuVisible = !this.menuVisible;
+  }
+
+  closeMenu() {
+    this.menuVisible = false;
+  }
+
+  // El HostListener para cerrar menú si haces click fuera también puede quedarse
 }

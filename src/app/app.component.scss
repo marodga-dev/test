@@ -1,0 +1,75 @@
+/* Header con botón y banner */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #2c3e50; /* azul oscuro */
+  color: white;
+  padding: 0 16px;
+  height: 50px;
+  position: relative;
+}
+
+/* Botón menú con tamaño fijo y centrado */
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-right: 16px;
+
+  &:hover {
+    background-color: #1a242f;
+  }
+}
+
+/* Banner ocupa todo el espacio restante */
+.banner {
+  flex-grow: 1;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Acordeón desplegable con color más claro */
+.accordion-menu {
+  background-color: #4a6a8a; /* azul más claro */
+  color: white;
+  width: 100%;
+  padding: 10px 16px;
+  box-sizing: border-box;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 8px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* Main debajo */
+main {
+  padding: 16px;
+}
