@@ -1,1 +1,0 @@
-import{Ka as e,La as o,Ta as n,za as a}from"./chunk-BJUJJ2HI.js";var i=class c{static \u0275fac=function(t){return new(t||c)};static \u0275cmp=a({type:c,selectors:[["app-contacto"]],decls:4,vars:0,template:function(t,p){t&1&&(e(0,"h2"),n(1,"Contacto"),o(),e(2,"p"),n(3,"Puedes contactarnos en: contactoe@jemplo.com"),o())},encapsulation:2})};export{i as ContactoComponent};
